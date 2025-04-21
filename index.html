@@ -1,12 +1,12 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
     <title>Unique</title>
     <meta name="author" content="Unique" />
-    <meta name="description" content="欢迎来到我的个人博客，这里记录了我关于编程、技术、生活的点点滴滴。" />
-    <meta name="keywords" content="" />
+    <meta name="description" content="欢迎来到我的技术与生活博客" />
+    <meta name="keywords" content="Hexo, 博客, 前端, 技术, 生活" />
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
@@ -58,27 +58,27 @@
         
         <a href="/">
             <i class="fa-solid fa-house fa-fw"></i>
-            <span>&ensp;Home</span>
+            <span>&ensp;首页</span>
         </a>
         
         <a href="/about">
             <i class="fa-solid fa-id-card fa-fw"></i>
-            <span>&ensp;About</span>
+            <span>&ensp;关于我</span>
         </a>
         
         <a href="/archives">
             <i class="fa-solid fa-box-archive fa-fw"></i>
-            <span>&ensp;Archives</span>
+            <span>&ensp;归档</span>
         </a>
         
         <a href="/categories">
             <i class="fa-solid fa-bookmark fa-fw"></i>
-            <span>&ensp;Categories</span>
+            <span>&ensp;分类</span>
         </a>
         
         <a href="/tags">
             <i class="fa-solid fa-tags fa-fw"></i>
-            <span>&ensp;Tags</span>
+            <span>&ensp;标签</span>
         </a>
         
     </nav>
@@ -95,7 +95,7 @@
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-house fa-fw"></i>
                         </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">首页</div>
                     </div>
                 </a>
                 
@@ -104,7 +104,7 @@
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-id-card fa-fw"></i>
                         </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">About</div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">关于我</div>
                     </div>
                 </a>
                 
@@ -113,7 +113,7 @@
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-box-archive fa-fw"></i>
                         </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">归档</div>
                     </div>
                 </a>
                 
@@ -122,7 +122,7 @@
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-bookmark fa-fw"></i>
                         </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">Categories</div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">分类</div>
                     </div>
                 </a>
                 
@@ -131,7 +131,7 @@
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-tags fa-fw"></i>
                         </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">标签</div>
                     </div>
                 </a>
                 
@@ -158,8 +158,8 @@
         <span class="info">
             <div class="wrap">
                 <h1>Unique</h1>
-                <h3>技术与生活的分享</h3>
-                <h5>欢迎来到我的个人博客，这里记录了我关于编程、技术、生活的点点滴滴。</h5>
+                <h3>记录思考与成长</h3>
+                <h5>欢迎来到我的技术与生活博客</h5>
             </div>
         </span>
     </div>
@@ -177,20 +177,30 @@
     
         <!-- 遍历所有文章 -->
         <div class="post">
-            <a href="/2024/12/01/hello-world/">
+            <a href="/2025/04/17/git/">
                 <!-- 为文章生成链接 -->
                 <h2 class="post-title">
-                    Hello World
+                    git拉取仓库问题
                 </h2>
             </a>
             <div class="category-and-date">
                 
+                    <span class="category">
+                        <a href="/categories/git/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            git
+                        </a>
+                        <!-- 查文章是否有分类。如果有，则输出文章的第一个分类，并生成链接。 -->
+                    </span>
+                    
                         <span class="date">
                             <span class="icon">
                                 <i class="fa-solid fa-calendar fa-fw"></i>
                             </span>
                             <!-- 检查文章是否有secret属性，若有显示加密图标；检查是否是置顶的，若是，显示标签 -->
-                            2024/12/1
+                            2025/4/17
                         </span>
 
 
@@ -205,29 +215,38 @@
             <div class="description">
                 <div class="content" v-pre>
                     
-                                        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-                                            
+                                <p>这是有关git上传时常遇到的报错的解决方案。</p>
+                                    
                 </div>
+                <!-- 如果文章有描述，显示描述。如果没有描述但有摘要，显示摘要。如果都没有，显示文章的正文内容。 -->
+
             </div>
             <div class="post-tags">
                 
+                    <span class="icon">
+                        <i class="fa-solid fa-tags fa-fw"></i>
+                    </span>
+                    
                         
                             
+                                <span class="tag">
+                                    
+                                        <a href="/tags/Web/" style="color: #00bcd4">
+                                            Web
+                                        </a>
+                                </span>
+                                
+                                <span class="tag">
+                                    
+                                        <a href="/tags/SSL/" style="color: #00a596">
+                                            SSL
+                                        </a>
+                                </span>
+                                
             </div>
-            <a href="/2024/12/01/hello-world/" class="go-post">阅读全文</a>
+            <!-- 显示文章标签 -->
+
+            <a href="/2025/04/17/git/" class="go-post">阅读全文</a>
         </div>
         
         <!-- 遍历所有文章 -->
@@ -274,6 +293,8 @@
 
                             
                 </div>
+                <!-- 如果文章有描述，显示描述。如果没有描述但有摘要，显示摘要。如果都没有，显示文章的正文内容。 -->
+
             </div>
             <div class="post-tags">
                 
@@ -285,20 +306,81 @@
                             
                                 <span class="tag">
                                     
-                                        <a href="/tags/%E6%B5%8B%E8%AF%95/" style="color: #03a9f4">
+                                        <a href="/tags/%E6%B5%8B%E8%AF%95/" style="color: #ffa2c4">
                                             测试
                                         </a>
                                 </span>
                                 
                                 <span class="tag">
                                     
-                                        <a href="/tags/%E7%A4%BA%E4%BE%8B/" style="color: #00bcd4">
+                                        <a href="/tags/%E7%A4%BA%E4%BE%8B/" style="color: #ff7d73">
                                             示例
                                         </a>
                                 </span>
                                 
             </div>
+            <!-- 显示文章标签 -->
+
             <a href="/2024/11/30/test/" class="go-post">阅读全文</a>
+        </div>
+        
+        <!-- 遍历所有文章 -->
+        <div class="post">
+            <a href="/2004/07/19/hello-world/">
+                <!-- 为文章生成链接 -->
+                <h2 class="post-title">
+                    hexo相关使用方法(官网内置)
+                </h2>
+            </a>
+            <div class="category-and-date">
+                
+                        <span class="date">
+                            <span class="icon">
+                                <i class="fa-solid fa-calendar fa-fw"></i>
+                            </span>
+                            <!-- 检查文章是否有secret属性，若有显示加密图标；检查是否是置顶的，若是，显示标签 -->
+                            2004/7/19
+                        </span>
+
+
+                        
+
+                                
+
+            </div>
+
+
+
+            <div class="description">
+                <div class="content" v-pre>
+                    
+                                        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+                                            
+                </div>
+                <!-- 如果文章有描述，显示描述。如果没有描述但有摘要，显示摘要。如果都没有，显示文章的正文内容。 -->
+
+            </div>
+            <div class="post-tags">
+                
+                        
+                            
+            </div>
+            <!-- 显示文章标签 -->
+
+            <a href="/2004/07/19/hello-world/" class="go-post">阅读全文</a>
         </div>
         
         <div class="page-current">
@@ -334,7 +416,7 @@
                         
                             <div class="friend-link">
                                 <a target="_blank" rel="noopener" href="https://argvchs.github.io">
-                                    Argvchs
+                                    原模板作者
                                 </a>
                             </div>
                             
@@ -350,7 +432,7 @@
     <div id="footer-wrap">
         <div>
             &copy;
-            2022 - 2024 Unique
+            2022 - 2025 Unique
             <span id="footer-icon">
                 <i class="fa-solid fa-font-awesome fa-fw"></i>
             </span>
