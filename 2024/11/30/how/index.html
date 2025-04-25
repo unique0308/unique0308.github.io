@@ -3,7 +3,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title>Archives | Unique</title>
+    <title>我是如何搭建个人博客的 | Unique</title>
     <meta name="author" content="Unique" />
     <meta name="description" content="欢迎来到我的技术与生活博客" />
     <meta name="keywords" content="Hexo, 博客, 前端, 技术, 生活" />
@@ -29,6 +29,10 @@
 
 
 <script src="/js/lib/preview.js"></script>
+
+
+
+
 
 
 
@@ -142,161 +146,89 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
+            <div class="article">
+    <div>
+        <h1>我是如何搭建个人博客的</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2024/11/30
+        </span>
+        
+        <span class="category">
+            <a href="/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                个人博客搭建
+            </a>
+        </span>
+        
+        
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
             
-<div id="archives">
-    
-    <div id="timeline-wrap" ref="timeline">
-        
-        <div class="timeline" data-title="hexo相关使用方法(官网内置)">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2004/7/19</div>
-                <a href="/2004/07/19/hello-world/">
-                    <h3>hexo相关使用方法(官网内置)</h3>
+            
+            <span class="tag">
+                
+                <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="color: #ffa2c4">
+                    服务器
                 </a>
-                <div class="info">
-                    
-                    
-                </div>
-            </div>
-        </div>
-        
-        <div class="timeline" data-title="测试">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2024/11/30</div>
-                <a href="/2024/11/30/test/">
-                    <h3>测试</h3>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/%E4%BD%8E%E4%BB%A3%E7%A0%81/" style="color: #00bcd4">
+                    低代码
                 </a>
-                <div class="info">
-                    
-                    <span class="category">
-                        <a href="/categories/%E6%96%87%E7%AB%A0%E7%B1%BB%E5%88%AB/">
-                            <span class="icon">
-                                <i class="fa-solid fa-bookmark fa-fw"></i>
-                            </span>
-                            文章类别
-                        </a>
-                    </span>
-                    
-                    
-                    <span class="tags">
-                        <span class="icon">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </span>
-                        
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/%E6%B5%8B%E8%AF%95/" style="color: #00bcd4">
-                                测试
-                            </a>
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/%E7%A4%BA%E4%BE%8B/" style="color: #ffa2c4">
-                                示例
-                            </a>
-                        </span>
-                        
-                    </span>
-                    
-                </div>
-            </div>
-        </div>
-        
-        <div class="timeline" data-title="我是如何搭建个人博客的">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2024/11/30</div>
-                <a href="/2024/11/30/how/">
-                    <h3>我是如何搭建个人博客的</h3>
-                </a>
-                <div class="info">
-                    
-                    <span class="category">
-                        <a href="/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-                            <span class="icon">
-                                <i class="fa-solid fa-bookmark fa-fw"></i>
-                            </span>
-                            个人博客搭建
-                        </a>
-                    </span>
-                    
-                    
-                    <span class="tags">
-                        <span class="icon">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </span>
-                        
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="color: #00bcd4">
-                                服务器
-                            </a>
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/%E4%BD%8E%E4%BB%A3%E7%A0%81/" style="color: #ffa2c4">
-                                低代码
-                            </a>
-                        </span>
-                        
-                    </span>
-                    
-                </div>
-            </div>
-        </div>
-        
-        <div class="timeline" data-title="git拉取仓库问题">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2025/4/17</div>
-                <a href="/2025/04/17/git/">
-                    <h3>git拉取仓库问题</h3>
-                </a>
-                <div class="info">
-                    
-                    <span class="category">
-                        <a href="/categories/git/">
-                            <span class="icon">
-                                <i class="fa-solid fa-bookmark fa-fw"></i>
-                            </span>
-                            git
-                        </a>
-                    </span>
-                    
-                    
-                    <span class="tags">
-                        <span class="icon">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </span>
-                        
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/Web/" style="color: #03a9f4">
-                                Web
-                            </a>
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/SSL/" style="color: #00bcd4">
-                                SSL
-                            </a>
-                        </span>
-                        
-                    </span>
-                    
-                </div>
-            </div>
-        </div>
+            </span>
+            
+        </span>
         
     </div>
+    
+    <div class="content" v-pre>
+        <p>这里大致介绍了我搭建这个个人博客的思路，以供各位参考。</p>
+<span id="more"></span>
+
+
+<h4 id="1-大致思路"><a href="#1-大致思路" class="headerlink" title="1.大致思路"></a>1.大致思路</h4><p>本地书写好静态html文件→托管到GitHub仓库→绑定到域名(通过服务器，本质是把服务器的IP绑定到域名上)→借助一些云服务的CDN加速</p>
+<h4 id="2-名词解释"><a href="#2-名词解释" class="headerlink" title="2.名词解释"></a>2.名词解释</h4><h5 id="（1）DNS解析"><a href="#（1）DNS解析" class="headerlink" title="（1）DNS解析"></a>（1）DNS解析</h5><p>将你输入的<strong>网址（域名）</strong>转换成<strong>服务器真实 IP 地址</strong> 的过程。</p>
+<p>👨‍💻 用户输入：<code>www.example.com</code></p>
+<p>📤 DNS 查询，查询出ip地址（例如 114.114.114.114）</p>
+<h5 id="（2）CDN加速"><a href="#（2）CDN加速" class="headerlink" title="（2）CDN加速"></a>（2）CDN加速</h5><p>CDN（Content Delivery Network，<strong>内容分发网络</strong>）是一种将<strong>网站的静态资源</strong>（如图片、CSS、JS、HTML、视频等）<strong>缓存到全球多个节点服务器</strong>上，让用户从<strong>离自己最近的节点加载资源</strong>的技术。</p>
+<h5 id="（3）服务器"><a href="#（3）服务器" class="headerlink" title="（3）服务器"></a>（3）服务器</h5><p>本质也是计算机的一种</p>
+<p><img src="picture.png" alt="服务器"></p>
+<h5 id="（4）具体流程"><a href="#（4）具体流程" class="headerlink" title="（4）具体流程"></a>（4）具体流程</h5><p>用户输入域名<br>   ↓<br>本地缓存是否命中？<br>   ↓<br>DNS 查询（本地 DNS → 权威 DNS → CDN 接管）<br>   ↓<br>CDN（Cloudflare）返回最近节点 IP<br>   ↓<br>浏览器访问 CDN 边缘节点<br>   ↓<br>边缘节点是否缓存资源？<br>     ├──✅ 命中缓存：直接返回页面<br>     └──❌ 未命中：从源站拉取（GitHub Pages），缓存后返回</p>
+<h5 id="（5）除了加速外，CDN的作用"><a href="#（5）除了加速外，CDN的作用" class="headerlink" title="（5）除了加速外，CDN的作用"></a>（5）除了加速外，CDN的作用</h5><p>因使用CDN加速后，返回的时CDN节点的IP，故而还可以一定程度上实现隐藏真实服务器的作用。</p>
+<p>以本人的搭建为例，即cloudflare是代理服务器，vercel是真实服务器，用户访问个人博客时，只会拿到CDN后最近节点的IP而拿不到我真实服务器的IP。</p>
+<h4 id="3-参考教程"><a href="#3-参考教程" class="headerlink" title="3.参考教程"></a>3.参考教程</h4><p>（1）阿里云购买自己的域名（❗注：不是买ip ）</p>
+<p>（2）hexo写静态网页，托管到GitHub：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Hi421a7K4?vd_source=583e245d8da604fa277cac2494d534c1">https://www.bilibili.com/video/BV1Hi421a7K4?vd_source=583e245d8da604fa277cac2494d534c1</a></p>
+<p>（3）把GitHub托管的代码部署到vercel，再借助cloudflare的加速：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1mu4y1t7Vm?vd_source=583e245d8da604fa277cac2494d534c1">https://www.bilibili.com/video/BV1mu4y1t7Vm?vd_source=583e245d8da604fa277cac2494d534c1</a></p>
+<p>（4）借助ai辅助理解代码，修改样式。</p>
+<p>（5）本地书写md文件，向上post即可。</p>
+<p>4.注意事项</p>
+<p>（1）需要修改&#x2F;配置文件</p>
+<p>①hexo-generator-category&#x2F;generaor.js</p>
+<p>需要参考tags的generator.js增加<strong>自动生成分类首页 &#x2F;categories&#x2F;index.html</strong>的代码，否则在首页”分类”功能无法打开（现在修改后仍有bug，待修复）</p>
+<p>②hexo-asset-image&#x2F;index.js</p>
+<p>先理解修改(<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43694227/article/details/135735519">https://blog.csdn.net/weixin_43694227/article/details/135735519</a>)</p>
+<p>再把**$(this).attr(‘src’, src);<strong>修改成</strong>$(this).attr(‘src’, src.replace(&#x2F;^/+&#x2F;, ‘’));**  &#x2F;&#x2F; 去除开头的斜杠</p>
+<p>否则如果我image的路径写的是（image.png）会解析成scr&#x3D;“&#x2F;image.png” 而导致无法识别</p>
+
+    </div>
+    
+    
+    
+    
+    
+    
+    
 </div>
 
             <footer id="footer">
@@ -327,6 +259,12 @@
         
     </div>
     <script src="/js/main.js"></script>
+    
+    
+
+
+
+
     
 </body>
 </html>
