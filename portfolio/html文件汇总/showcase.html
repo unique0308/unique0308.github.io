@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PPT Master — AI 多 Agent PPT 生成平台 | AI 产品经理作品集</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --primary-light: #eff6ff;
+      --success: #16a34a;
+      --warning: #f59e0b;
+      --danger: #dc2626;
+      --purple: #7c3aed;
+      --gray-50: #f8fafc;
+      --gray-100: #f1f5f9;
+      --gray-200: #e2e8f0;
+      --gray-400: #94a3b8;
+      --gray-500: #64748b;
+      --gray-700: #334155;
+      --gray-900: #0f172a;
+      --shadow: 0 1px 3px rgba(0,0,0,0.08);
+      --shadow-lg: 0 14px 28px -6px rgba(0,0,0,0.1), 0 6px 12px -4px rgba(0,0,0,0.05);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: #ffffff;
+      color: var(--gray-900);
+      line-height: 1.75;
+    }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 60px 40px; }
+    @media (max-width: 768px) { .container { padding: 40px 20px; } }
+
+    /* Header */
+    .portfolio-header { margin-bottom: 48px; }
+
+    .portfolio-label {
+      font-size: 13px; font-weight: 700; color: var(--primary);
+      letter-spacing: 0.08em; text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .portfolio-title {
+      font-size: 36px; font-weight: 800; color: var(--gray-900);
+      line-height: 1.25; margin-bottom: 14px;
+    }
+
+    .portfolio-subtitle {
+      font-size: 17px; color: var(--gray-500); max-width: 760px;
+    }
+
+    .divider {
+      height: 3px; background: var(--primary); margin: 28px 0 40px;
+      border-radius: 2px;
+    }
+
+    /* Two-column layout */
+    .main-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.05fr;
+      gap: 48px;
+      align-items: start;
+    }
+    @media (max-width: 980px) { .main-grid { grid-template-columns: 1fr; } }
+
+    /* Left: sections */
+    .sections-col { display: flex; flex-direction: column; gap: 40px; }
+
+    .section-item { position: relative; padding-left: 42px; }
+
+    .section-number {
+      position: absolute; left: 0; top: 2px;
+      width: 28px; height: 28px; background: var(--primary);
+      color: white; border-radius: 50%; font-size: 13px; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    .section-title-wrap { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
+
+    .section-title {
+      font-size: 17px; font-weight: 700; color: var(--gray-900);
+    }
+
+    .section-tag {
+      font-size: 11px; font-weight: 600;
+      padding: 3px 10px; border-radius: 4px;
+      white-space: nowrap;
+    }
+
+    .tag-blue { background: var(--primary-light); color: var(--primary); }
+    .tag-green { background: #f0fdf4; color: var(--success); }
+    .tag-orange { background: #fffbeb; color: var(--warning); }
+    .tag-purple { background: #f5f3ff; color: var(--purple); }
+
+    .section-desc {
+      font-size: 14px; color: var(--gray-700);
+      line-height: 1.95;
+    }
+
+    .section-desc b { color: var(--gray-900); font-weight: 600; }
+
+    .highlight-line {
+      background: linear-gradient(transparent 60%, rgba(37,99,235,0.15) 60%);
+      padding: 0 2px;
+    }
+
+    /* Right: mockups */
+    .mockups-col { display: flex; flex-direction: column; gap: 24px; }
+
+    .browser-mockup {
+      background: white; border-radius: 12px; box-shadow: var(--shadow-lg);
+      border: 1px solid var(--gray-200); overflow: hidden;
+    }
+
+    .browser-bar {
+      height: 36px; background: var(--gray-100); border-bottom: 1px solid var(--gray-200);
+      display: flex; align-items: center; gap: 8px; padding: 0 14px;
+    }
+
+    .browser-dot { width: 10px; height: 10px; border-radius: 50%; }
+    .dot-red { background: #ff5f56; }
+    .dot-yellow { background: #ffbd2e; }
+    .dot-green { background: #27c93f; }
+
+    .browser-url {
+      flex: 1; height: 22px; background: white; border-radius: 4px;
+      margin-left: 8px; font-size: 11px; color: var(--gray-400);
+      display: flex; align-items: center; padding: 0 10px;
+      border: 1px solid var(--gray-200);
+    }
+
+    .browser-body {
+      padding: 12px; background: var(--gray-50);
+    }
+
+    .browser-body img {
+      width: 100%; border-radius: 6px; border: 1px solid var(--gray-200);
+      display: block; background: white;
+    }
+
+    .mockup-caption {
+      padding: 12px 16px; background: white; border-top: 1px solid var(--gray-100);
+      font-size: 12px; color: var(--gray-500);
+    }
+
+    /* Footer */
+    .page-footer {
+      margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--gray-200);
+      font-size: 12px; color: var(--gray-400); text-align: center;
+    }
+
+    .page-footer a { color: var(--primary); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <header class="portfolio-header">
+      <div class="portfolio-label">AI Product Portfolio 02</div>
+      <h1 class="portfolio-title">PPT Master — AI 多 Agent PPT 生成平台</h1>
+      <p class="portfolio-subtitle">
+        基于 <span class="highlight-line">Multi-Agent 编排 + Tool Calling + Human-in-the-Loop</span> 的完整 AI 产品链路，
+        将 AI PPT 生成从"单次 Prompt 对话"升级为"可决策、可观测、可恢复"的多 Agent 协作系统。
+      </p>
+      <div class="divider"></div>
+    </header>
+
+    <div class="main-grid">
+
+      <!-- ====== LEFT: AI PM Skill Sections ====== -->
+      <div class="sections-col">
+
+        <!-- 01: Multi-Agent 编排 -->
+        <div class="section-item">
+          <div class="section-number">01</div>
+          <div class="section-title-wrap">
+            <h3 class="section-title">Multi-Agent 编排与 Orchestrator 模式</h3>
+            <span class="section-tag tag-purple">Agentic Workflow</span>
+          </div>
+          <p class="section-desc">
+            用 <b>Prompt Chaining</b> 将 PPT 生成拆成 <b>Supervisor → Strategist → Executor</b>。
+            Supervisor 负责路由、状态传递和错误恢复；Agent 之间用 <b>Handoff Protocol</b>
+            传递结构化上下文，减少多 Agent 协作中的上下文漂移。
+          </p>
+        </div>
+
+        <!-- 02: Harness 架构 -->
+        <div class="section-item">
+          <div class="section-number">02</div>
+          <div class="section-title-wrap">
+            <h3 class="section-title">Harness 架构设计：关注点分离</h3>
+            <span class="section-tag tag-blue">系统架构</span>
+          </div>
+          <p class="section-desc">
+            核心是 <b>harness + model = agent</b>：模型负责理解与生成，Harness 负责规则、脚本和质量门禁。
+            通过 <b>spec_lock.md</b> 把设计决策变成机器可校验契约，逐页检查颜色、字体和 SVG 合法性。
+            工程上复用成熟转换引擎，把创新集中在 Agent 编排和交互层。
+          </p>
+        </div>
+
+        <!-- 03: Tool Calling -->
+        <div class="section-item">
+          <div class="section-number">03</div>
+          <div class="section-title-wrap">
+            <h3 class="section-title">Tool-Use / Function Calling 设计</h3>
+            <span class="section-tag tag-green">Agent Tools</span>
+          </div>
+          <p class="section-desc">
+            基于 <b>OpenAI Function Calling</b> 标准组织 15+ 工具，并按 Agent 职责分配：
+            文档转换、图片分析、SVG 质检、PPTX 导出各自隔离。
+            每个工具都有明确 Schema 和读写边界，既让模型能自主调用，也控制工具爆炸半径。
+          </p>
+        </div>
+
+        <!-- 04: HITL -->
+        <div class="section-item">
+          <div class="section-number">04</div>
+          <div class="section-title-wrap">
+            <h3 class="section-title">Human-in-the-Loop 确认机制</h3>
+            <span class="section-tag tag-orange">交互设计</span>
+          </div>
+          <p class="section-desc">
+            Strategist 先产出 <b>8 项设计推荐</b>，管道进入 <b>BLOCKING 检查点</b>。
+            用户在前端可编辑卡片中集中确认画布、配色、图标、排版和图片策略后，生成流程才继续。
+            关键决策集中确认，避免后续页面风格被反复打断和漂移。
+          </p>
+        </div>
+
+        <!-- 05: Contract 传递 -->
+        <div class="section-item">
+          <div class="section-number">05</div>
+          <div class="section-title-wrap">
+            <h3 class="section-title">Agent 间 Spec-as-Contract 传递</h3>
+            <span class="section-tag tag-green">Agent 通信</span>
+          </div>
+          <p class="section-desc">
+            Agent 间传递的不是聊天记录，而是 <b>design_spec.md</b> 与 <b>spec_lock.md</b> 两份契约。
+            前者说明设计理由，后者锁定颜色、字体和图标等执行参数。
+            Executor 每页生成前强制重读 spec_lock，降低长文档生成中的颜色和字体漂移。
+          </p>
+        </div>
+
+        <!-- 06: Guardrails -->
+        <div class="section-item">
+          <div class="section-number">06</div>
+          <div class="section-title-wrap">
+            <h3 class="section-title">Guardrails 与 Fallback 策略</h3>
+            <span class="section-tag tag-orange">安全与韧性</span>
+          </div>
+          <p class="section-desc">
+            SVG 生成后进入 <b>10 项质量检查</b>：合法性、viewBox、禁止元素、字体尾族和 spec_lock 漂移。
+            error 阻断导出，warning 提示修复；LLM 不可用时降级到规则引擎推荐风格。
+            API Key 仅存 sessionStorage，不落服务端磁盘，降低安全风险。
+          </p>
+        </div>
+
+      </div>
+
+      <!-- ====== RIGHT: Screenshot Mockups ====== -->
+      <div class="mockups-col">
+
+        <div class="browser-mockup">
+          <div class="browser-bar">
+            <span class="browser-dot dot-red"></span>
+            <span class="browser-dot dot-yellow"></span>
+            <span class="browser-dot dot-green"></span>
+            <div class="browser-url">AI 风格推荐 · 14 Palettes × 20 Renderings × 3 Modes</div>
+          </div>
+          <div class="browser-body">
+            <img src="../图片汇总/photo/05_style_selection_manual.png" alt="14 种配色方案 × 20 种视觉渲染风格的手动选择器，展示了完整的风格管理产品化设计">
+          </div>
+          <div class="mockup-caption">风格资源管理：840 种组合的产品化呈现</div>
+        </div>
+
+        <div class="browser-mockup">
+          <div class="browser-bar">
+            <span class="browser-dot dot-red"></span>
+            <span class="browser-dot dot-yellow"></span>
+            <span class="browser-dot dot-green"></span>
+            <div class="browser-url">Human-in-the-Loop · 八项设计确认 + 可编辑卡片</div>
+          </div>
+          <div class="browser-body">
+            <img src="../图片汇总/photo/07_confirmation_cards.png" alt="Strategist Agent 产出的八项设计确认面板，用户可逐项编辑后再确认">
+          </div>
+          <div class="mockup-caption">⛔ BLOCKING Checkpoint：用户确认设计规范后管道自动运行</div>
+        </div>
+
+        <div class="browser-mockup">
+          <div class="browser-bar">
+            <span class="browser-dot dot-red"></span>
+            <span class="browser-dot dot-yellow"></span>
+            <span class="browser-dot dot-green"></span>
+            <div class="browser-url">逐页 SVG 生成 · Executor Agent + Live Preview 编辑器</div>
+          </div>
+          <div class="browser-body">
+            <img src="../图片汇总/photo/08_slides_generating.png" alt="Executor Agent 逐页生成的 SVG 幻灯片网格 + Live Preview 按钮">
+          </div>
+          <div class="mockup-caption">每页 SVG 附带 spec_lock.md 防漂移校验 + 点击即标注的 Live Preview</div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <footer class="page-footer">
+      PPT Master — AI 多 Agent PPT 生成平台 · AI 产品经理作品集 ·
+      基于开源项目 <a href="https://github.com/hugohe3/ppt-master" target="_blank">hugohe3/ppt-master</a> 进行 Agent 化改造 ·
+      仅用于作品展示与学习交流
+    </footer>
+
+  </div>
+
+</body>
+</html>
+
+
+
+
