@@ -1,0 +1,205 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>企业系统与 AI 自动化 - 需求分析师作品集</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <main class="portfolio-shell ba-version">
+    <nav class="portfolio-nav" aria-label="作品集导航">
+      <a class="brand" href="../index.html">凌昊骞｜需求分析师作品集</a>
+      <div class="links">
+        <a href="../index.html">能力总览</a>
+        <a href="product-foundation.html">业务流程与系统分析</a>
+        <a href="agent-demos.html">AI BA 工具实践</a>
+      </div>
+    </nav>
+
+    <header class="portfolio-hero">
+      <div class="breadcrumb"><span>Selected Case</span><span>Case 02</span><span>企业系统与 AI 自动化</span></div>
+      <p class="detail-eyebrow">In-house Enterprise Application / AI Automation</p>
+      <h1>把 AI 能力接入企业系统：权限、配额、审批、数据和验收一起设计。</h1>
+      <p class="lead">以企业内部 AI 中台为例，将生成式 AI 能力纳入权限、配额、审批、数据看板、协作机制和验收标准，形成可治理、可协作、可持续迭代的内部应用系统。</p>
+      <div class="proof-callout">
+        <strong>核心产出</strong>
+        <p>企业系统需求拆解、AI 工具流程化、权限与配额规则、审批治理、关键路径验收和跨角色交付协作。</p>
+      </div>
+      <div class="pill-list">
+        <span>企业内部系统</span>
+        <span>AI 自动化</span>
+        <span>权限配额</span>
+        <span>审批治理</span>
+        <span>验收回归</span>
+      </div>
+    </header>
+
+    <section class="detail-section">
+      <div class="section-heading">
+        <div>
+          <p class="detail-eyebrow">Enterprise BA View</p>
+          <h2>从“模型能生成”到“业务可使用、IT 可交付”</h2>
+        </div>
+        <p>公司内部 AI 中台覆盖生成、资产、会话、模板、审批、配额和用量看板。我的呈现重点放在业务规则、用户权限、数据反馈和可验收链路，符合企业系统需求分析的工作方式。</p>
+      </div>
+      <div class="foundation-kpis">
+        <article><span>4</span><strong>业务治理对象</strong><p>权限、配额、审批、资产统一进入需求规则</p></article>
+        <article><span>3</span><strong>验收边界</strong><p>核心链路、权限隔离、成本扣减可回归</p></article>
+        <article><span>1</span><strong>一致性规范</strong><p>用 token 和组件范式约束 AI 生成漂移</p></article>
+        <article><span>多角色</span><strong>协作机制</strong><p>业务、开发、QA 和人工确认分工</p></article>
+      </div>
+      <div class="evidence-grid visual-grid" style="margin-top:16px">
+        <article class="detail-card strategy-card">
+          <h3>核心问题</h3>
+          <div class="strategy-list compact">
+            <div><b>生成不可控</b><span>不同用户生成质量不稳定，结果需要可追溯。</span></div>
+            <div><b>协作易漂移</b><span>多人、多 AI 协作者参与后，UI 和逻辑容易不一致。</span></div>
+            <div><b>验收不充分</b><span>只看页面无法证明核心路径、权限边界和成本扣减可用。</span></div>
+            <div><b>治理要求高</b><span>企业场景需要权限、配额、审批、用量统计和资产管理。</span></div>
+          </div>
+        </article>
+        <article class="detail-card media-card">
+          <img src="../图片汇总/1000019947.jpg" alt="AI 中台数据看板截图">
+          <p style="margin-top:12px">实际项目截图：AI 中台数据看板 / 洞察与用量治理。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="detail-section">
+      <div class="section-heading">
+        <div>
+          <p class="detail-eyebrow">Process Model</p>
+          <h2>AI 能力进入企业系统的 5 个需求层</h2>
+        </div>
+        <p>平台把模型能力拆成入口权限、生成任务、资产沉淀、治理规则和数据反馈。每一层都需要清晰定义业务规则、系统动作、异常处理和验收口径。</p>
+      </div>
+      <div class="business-flow">
+        <article><b>01</b><strong>入口权限</strong><span>角色、额度、跨用户隔离</span></article>
+        <article><b>02</b><strong>生成工作台</strong><span>图片/视频生成、任务轮询</span></article>
+        <article><b>03</b><strong>资产沉淀</strong><span>历史记录、收藏、模板复用</span></article>
+        <article><b>04</b><strong>治理规则</strong><span>审批、配额、成本扣减</span></article>
+        <article><b>05</b><strong>数据反馈</strong><span>用量看板、异常定位、复盘</span></article>
+      </div>
+    </section>
+
+    <section class="detail-section">
+      <div class="section-heading">
+        <div>
+          <p class="detail-eyebrow">01 / Validation</p>
+          <h2>把“Demo 能用”变成“核心链路可验收”</h2>
+        </div>
+        <p>项目定义 smoke harness，模拟不同用户和关键业务路径，把登录、生成、轮询、权限隔离、收藏、模板 cap、配额审批等链路纳入回归验证。</p>
+      </div>
+      <div class="evidence-grid visual-grid">
+        <article class="detail-card strategy-card">
+          <h3>Smoke Harness 覆盖点</h3>
+          <div class="strategy-list">
+            <div><b>生成链路</b><span>生成后轮询任务状态，确认结果文件、历史记录和积分扣减。</span></div>
+            <div><b>权限边界</b><span>用不同用户身份验证 admin 权限和跨用户隔离。</span></div>
+            <div><b>异常归因</b><span>失败后区分测试漂移、数据污染或真实回归，避免误判。</span></div>
+          </div>
+        </article>
+        <article class="insight-card strategy-card">
+          <h3>交付价值</h3>
+          <div class="transfer-tags">
+            <span>核心路径可验收</span>
+            <span>权限边界可证明</span>
+            <span>成本扣减可追踪</span>
+            <span>回归问题可定位</span>
+          </div>
+          <p>验证机制本身就是 AI 产品交付的一部分，它把“看起来能用”变成“关键路径可被反复证明”。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="detail-section">
+      <div class="section-heading">
+        <div>
+          <p class="detail-eyebrow">02 / Collaboration</p>
+          <h2>把 AI 协作从随机生成变成分工流程</h2>
+        </div>
+        <p>项目没有硬包装运行时多 Agent 框架，而是落地 workflow multi-agent 思想：用不同 AI 协作者承担决策、施工、核验等责任。</p>
+      </div>
+      <div class="evidence-grid visual-grid">
+        <article class="detail-card strategy-card">
+          <h3>协作分工</h3>
+          <div class="state-flow">
+            <span>决策</span>
+            <span>施工</span>
+            <span>核验</span>
+            <span>确认</span>
+          </div>
+          <div class="strategy-list compact">
+            <div><b>决策 session</b><span>写 spec、验收剧本和不可改契约。</span></div>
+            <div><b>施工 agent</b><span>根据 spec 实现，信息缺失时停止并提问。</span></div>
+            <div><b>核验 agent</b><span>使用 fresh context，只看 spec 和 diff 反向找问题。</span></div>
+            <div><b>Owner 确认</b><span>真实模型调用、生产数据库和部署动作保留人工确认权。</span></div>
+          </div>
+        </article>
+        <article class="insight-card strategy-card">
+          <h3>降低的风险</h3>
+          <div class="before-after">
+            <div><span>Before</span><strong>随机生成</strong><p>AI 直接产出页面，需求误读和风格漂移难以及时发现。</p></div>
+            <div><span>After</span><strong>分工流程</strong><p>决策、施工、核验拆开，每一步都有明确产物和确认点。</p></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="detail-section">
+      <div class="section-heading">
+        <div>
+          <p class="detail-eyebrow">03 / Design System</p>
+          <h2>用设计约束防止 AI 生成页面风格漂移</h2>
+        </div>
+        <p>AI 生成原型速度很快，但多人和多 Agent 参与后，最容易出现每个页面一种风格。项目用 UI token、组件范式和协作审计约束一致性。</p>
+      </div>
+      <div class="evidence-grid visual-grid">
+        <article class="detail-card strategy-card">
+          <h3>约束方式</h3>
+          <div class="strategy-list">
+            <div><b>组件复用</b><span>按钮、卡片、表单、弹窗优先复用既有 class 和参考组件。</span></div>
+            <div><b>Token 管理</b><span>颜色、圆角、间距走变量或 token，减少随手硬编码。</span></div>
+            <div><b>变更前置</b><span>新增模块前明确路由、API、数据契约、migration 编号和 UI 风格锚点。</span></div>
+          </div>
+        </article>
+        <article class="insight-card strategy-card">
+          <h3>系统收益</h3>
+          <div class="transfer-tags">
+            <span>风格一致</span>
+            <span>维护成本低</span>
+            <span>协作边界清楚</span>
+            <span>新增模块可控</span>
+          </div>
+          <p>生成速度越快，设计系统和协作规范越重要，否则项目会快速变成风格碎片化的页面集合。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="detail-section">
+      <div class="section-heading">
+        <div>
+          <p class="detail-eyebrow">Outcome</p>
+          <h2>交付成果：可用、可控、可协作</h2>
+        </div>
+        <p>这部分最终证明：AI 产品经理需要把模型能力变成系统能力，把 Demo 变成能继续被研发、运营和管理者使用的产品。</p>
+      </div>
+      <div class="proof-grid">
+        <article><h3>可用</h3><p>核心生成链路、资产沉淀、审批与配额治理能形成可演示原型。</p></article>
+        <article><h3>可控</h3><p>权限、配额、成本、历史记录和数据看板让模型调用进入治理框架。</p></article>
+        <article><h3>可协作</h3><p>通过 spec 契约、协作规范和设计系统，让多人和 AI 协作者保持一致。</p></article>
+      </div>
+      <div class="route-panel">
+        <a href="../index.html"><strong>返回首页总览</strong><span>查看作品集结构与能力概述</span></a>
+        <a href="product-foundation.html"><strong>查看传统产品基本功</strong><span>业务闭环与中后台能力</span></a>
+        <a href="agent-demos.html"><strong>进入自建 Agent Demo 项目</strong><span>Agent Workflow 项目实践</span></a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+
+
+
+
